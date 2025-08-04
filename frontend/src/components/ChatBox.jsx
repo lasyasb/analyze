@@ -8,9 +8,10 @@ export default function ChatBox({ onChartData }) {
   const handleAsk = async () => {
     try {
       const res = await axios.post(
-        "https://verbose-acorn-pjp7x7pw9wxj3997v-5000.app.github.dev/ask",
-        { question }
-      );
+  "http://localhost:5000/ask",
+  { question }
+);
+
 
       const result = res.data.answer;
 setAnswer(result);
