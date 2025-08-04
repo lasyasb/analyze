@@ -68,9 +68,18 @@ VITE_BACKEND_URL=http://localhost:5000
 
 ---
 ## ScreenShots
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+
+### Image 1 – File Upload Interface  
+![Image 4](./ss/image.png)
+
+### Image 2 – Summary Generation  
+![Image 1](./ss/image-1.png)
+
+### Image 3 – Chatbot Interaction  
+![Image 2](./ss/image-2.png) 
+
+### Image 4 – Dashboard View  
+![Image 3](./ss/image-3.png)
+
 ---
 Made with 💙 by Lasya
