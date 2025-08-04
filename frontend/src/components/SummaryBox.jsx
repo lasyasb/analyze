@@ -7,7 +7,7 @@ export default function SummaryBox() {
   const handleSummary = async () => {
     try {
       const res = await axios.get(
-        "https://verbose-acorn-pjp7x7pw9wxj3997v-5000.app.github.dev/summary"
+        "http://localhost:5000/summary"
       );
       setSummary(res.data.summary);
     } catch (err) {
