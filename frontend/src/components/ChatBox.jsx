@@ -8,7 +8,7 @@ export default function ChatBox({ onChartData }) {
   const handleAsk = async () => {
     try {
       const res = await axios.post(
-  "http://localhost:5000/ask",
+"https://analyze-c85k.onrender.com/ask",
   { question }
 );
 
