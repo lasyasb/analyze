@@ -1,12 +1,58 @@
-# React + Vite
+# 📊 AI-Powered Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, responsive, and intelligent dashboard that allows users to upload CSV datasets, get instant summaries, ask data-related questions, and even generate charts — powered by the Mistral AI model. Built with React + Flask + Mistral.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [View Live on Render/Vercel](https://your-live-demo-link.com)  
+📁 [GitHub Repo](https://github.com/lasyasb/analyze)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Features
+
+- ✅ **CSV Upload**: Drop your dataset and start analyzing instantly.
+- 🤖 **AI-Powered Summary**: Get quick bullet-point summaries of your dataset.
+- 💬 **Ask the Dataset**: Ask questions like “Generate a chart of individuals by education” and get intelligent responses.
+- 📊 **Auto Chart Generation**: AI returns chart-ready JSONs for data visualizations.
+- 🎨 **Clean, Responsive UI**: Built with custom CSS for a consistent and modern experience.
+
+---
+
+## ⚙️ Tech Stack
+
+| Frontend | Backend | AI |
+|----------|---------|----|
+| React (Vite) | Flask | Mistral (mistral-small) |
+| Axios | Pandas | OpenAI-compatible API |
+| CSS Styling | CORS | dotenv |
+
+---
+
+## 🧪 How to Run Locally
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/lasyasb/analyze.git
+cd analyze
+
+2. Setup Backend (Flask)
+
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+Create a .env file:
+
+MISTRAL_API_KEY=your_api_key_here
+
+Run the server:
+
+python app.py
+
+3. Setup Frontend (React)
+
+cd frontend
+npm install
+npm run dev
