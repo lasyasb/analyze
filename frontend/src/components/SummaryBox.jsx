@@ -7,7 +7,7 @@ export default function SummaryBox() {
   const handleSummary = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/summary"
+     "https://analyze-c85k.onrender.com/summary"
       );
       setSummary(res.data.summary);
     } catch (err) {
