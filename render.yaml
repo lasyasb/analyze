@@ -1,0 +1,10 @@
+# render.yaml
+services:
+  - type: web
+    name: ai-dashboard-backend
+    env: python
+    buildCommand: ""
+    startCommand: python backend/app.py
+    envVars:
+      - key: MISTRAL_API_KEY
+        value: your-mistral-key-here-or-add-in-dashboard
