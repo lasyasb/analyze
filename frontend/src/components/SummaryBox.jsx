@@ -7,7 +7,7 @@ export default function SummaryBox() {
   const handleSummary = async () => {
     try {
       const res = await axios.get(
-     "https://analyze-c85k.onrender.com/summary"
+  `${import.meta.env.VITE_BACKEND_URL}/summary`
       );
       setSummary(res.data.summary);
     } catch (err) {
