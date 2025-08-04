@@ -15,7 +15,7 @@ export default function FileUpload({ onChartData }) {
 
     try {
       const res = await axios.post(
-        "https://verbose-acorn-pjp7x7pw9wxj3997v-5000.app.github.dev/upload",
+        "http://localhost:5000/upload",
         formData,
         {
           headers: {
