@@ -15,7 +15,8 @@ export default function FileUpload({ onChartData }) {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/upload",
+        "https://analyze-c85k.onrender.com/upload"
+,
         formData,
         {
           headers: {
